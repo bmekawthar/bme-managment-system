@@ -1,0 +1,136 @@
+.cm-form-card {
+  background-color: #FFFFFF;
+  border: 1px solid #D8C4E6;
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 30px;
+  box-shadow: 0 3px 10px rgba(23, 70, 107, 0.06);
+}
+
+.cm-form-header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.cm-form-header h2 {
+  color: #17466B;
+  font-size: 23px;
+  margin-bottom: 8px;
+}
+
+.cm-form-header p {
+  color: #17466B;
+  margin: 0;
+}
+
+.cm-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+.cm-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cm-form-group-full {
+  grid-column: 1 / -1;
+}
+
+.cm-form-group label {
+  color: #17466B;
+  font-weight: 600;
+}
+
+.cm-form-group input,
+.cm-form-group select,
+.cm-form-group textarea {
+  width: 100%;
+  padding: 11px 12px;
+  border: 1px solid #C9D5E0;
+  border-radius: 7px;
+  font-size: 14px;
+  color: #17466B;
+  background-color: #FFFFFF;
+  font-family: inherit;
+}
+
+.cm-form-group input:focus,
+.cm-form-group select:focus,
+.cm-form-group textarea:focus {
+  outline: none;
+  border-color: #A77BCA;
+  box-shadow: 0 0 0 2px rgba(167, 123, 202, 0.15);
+}
+
+.cm-form-group input[readonly] {
+  background-color: #F5EFFA;
+  cursor: default;
+}
+
+.cm-form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.cm-date-button {
+  width: 100%;
+  padding: 11px 12px;
+  border: 1px solid #C9D5E0;
+  border-radius: 7px;
+  background-color: #FFFFFF;
+  color: #17466B;
+  text-align: left;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.cm-date-button:hover {
+  border-color: #A77BCA;
+}
+
+.cm-calendar-container {
+  margin-top: 10px;
+  padding: 12px;
+  background-color: #FFFFFF;
+  border: 1px solid #E2D5EF;
+  border-radius: 8px;
+  width: fit-content;
+  max-width: 100%;
+}
+
+.cm-form-actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+@media (max-width: 700px) {
+  .cm-form-card {
+    padding: 18px;
+  }
+
+  .cm-form-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .cm-form-group-full {
+    grid-column: auto;
+  }
+
+  .cm-form-header h2 {
+    font-size: 20px;
+  }
+
+  .cm-form-actions {
+    flex-direction: column;
+  }
+
+  .cm-form-actions button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,185 @@
+.cm-faults-section {
+  background-color: #FFFFFF;
+  border: 1px solid #D8C4E6;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 3px 10px rgba(23, 70, 107, 0.06);
+}
+
+.cm-section-header {
+  text-align: center;
+  margin-bottom: 18px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #E2D5EF;
+}
+
+.cm-section-header h2 {
+  color: #17466B;
+  font-size: 21px;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* Fault Cards Layout */
+
+.cm-faults-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 520px);
+  justify-content: center;
+  gap: 14px;
+  align-items: start;
+}
+
+/* Individual Fault Card */
+
+.cm-fault-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #FFFFFF;
+  border: 1px solid #D8C4E6;
+  border-top: 3px solid #A77BCA;
+  border-radius: 10px;
+  padding: 14px 16px;
+  box-shadow: 0 3px 9px rgba(23, 70, 107, 0.06);
+  box-sizing: border-box;
+}
+
+.cm-fault-card h3 {
+  width: 100%;
+  color: #A77BCA;
+  font-size: 21px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 0 10px;
+  padding-bottom: 9px;
+  border-bottom: 1px solid #E2D5EF;
+  overflow-wrap: anywhere;
+}
+
+/* Fault Information */
+
+.cm-fault-card p {
+  width: 100%;
+  color: #17466B;
+  font-size: 13px;
+  line-height: 1.5;
+  text-align: center;
+  margin: 0 0 6px;
+  overflow-wrap: anywhere;
+}
+
+.cm-fault-card p strong {
+  color: #17466B;
+  font-weight: 700;
+}
+
+.cm-fault-description {
+  display: block;
+  width: 100%;
+  margin-top: 5px;
+  padding: 8px;
+  background-color: #F5EFFA;
+  border: 1px solid #D8C4E6;
+  border-radius: 8px;
+  color: #17466B;
+  font-size: 13px;
+  line-height: 1.5;
+  text-align: center;
+  white-space: pre-line;
+  overflow-wrap: anywhere;
+  box-sizing: border-box;
+}
+
+/* Fault Status - No Box */
+
+.cm-fault-status {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  margin-top: 7px;
+  padding: 3px 0;
+  background: none;
+  border: none;
+  color: #17466B;
+  font-size: 13px;
+  text-align: center;
+}
+
+.cm-fault-status strong {
+  color: #17466B;
+}
+
+.cm-status-open {
+  color: #D98236;
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.cm-status-in-progress {
+  color: #4A9BCB;
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+/* Fault Actions */
+
+.cm-fault-actions {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #E2D5EF;
+}
+
+.cm-fault-actions button {
+  min-width: 150px;
+}
+
+/* Empty Message */
+
+.cm-empty-message {
+  color: #17466B;
+  text-align: center;
+  background-color: #F5EFFA;
+  border: 1px solid #E2D5EF;
+  border-radius: 10px;
+  padding: 22px;
+  margin: 0;
+}
+
+/* Responsive Design */
+
+@media (max-width: 700px) {
+  .cm-faults-section {
+    padding: 14px;
+  }
+
+  .cm-faults-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .cm-fault-card {
+    padding: 13px 11px;
+  }
+
+  .cm-fault-card h3 {
+    font-size: 19px;
+  }
+
+  .cm-fault-actions button {
+    width: 100%;
+  }
+}

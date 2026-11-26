@@ -1,0 +1,422 @@
+/* =====================================
+   AKALIL HOSPITAL - PM HISTORY PAGE
+===================================== */
+
+.pm-page-history {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #F1F4F9;
+  color: #24364B;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.pm-page-history-content {
+  width: 92%;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 28px 0 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+
+/* PAGE HEADER */
+
+.pm-page-history-top {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.pm-page-history-back {
+  width: fit-content;
+  padding: 10px 19px;
+  background: #17466B;
+  color: #FFFFFF;
+  border: 1px solid #17466B;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.pm-page-history-back:hover {
+  background: #28658F;
+  border-color: #28658F;
+}
+
+.pm-page-history-title {
+  padding: 4px 0 4px 17px;
+  border-left: 5px solid #A77BCA;
+}
+
+.pm-page-history-title h2 {
+  margin: 0;
+  color: #173F61;
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+}
+
+.pm-page-history-title p {
+  margin: 7px 0 0;
+  color: #52677F;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* EQUIPMENT INFORMATION */
+
+.pm-page-equipment-info {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  align-items: center;
+  gap: 23px;
+  padding: 21px 24px;
+  background: #FFFFFF;
+  border: 1px solid #D5DFEA;
+  border-top: 4px solid #A77BCA;
+  border-radius: 11px;
+  box-shadow: 0 3px 12px rgba(23, 63, 97, 0.07);
+}
+
+.pm-page-equipment-heading {
+  padding-right: 20px;
+  border-right: 1px solid #DCE3EC;
+}
+
+.pm-page-section-label {
+  color: #8054A7;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.pm-page-equipment-heading h3 {
+  margin: 9px 0 0;
+  color: #173F61;
+  font-size: 23px;
+  font-weight: 800;
+}
+
+.pm-page-equipment-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.pm-page-equipment-details div {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.pm-page-equipment-details span {
+  color: #52677F;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.pm-page-equipment-details strong {
+  color: #172F49;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+/* HISTORY SECTION */
+
+.pm-page-history-section {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.pm-page-history-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding-bottom: 13px;
+  border-bottom: 2px solid #D6DFE9;
+}
+
+.pm-page-history-section-header h3 {
+  margin: 0;
+  color: #173F61;
+  font-size: 23px;
+  font-weight: 800;
+}
+
+.pm-page-history-section-header p {
+  margin: 6px 0 0;
+  color: #52677F;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.pm-page-record-count {
+  padding: 9px 15px;
+  background: #EEE5F5;
+  color: #704A96;
+  border: 1px solid #D5C1E6;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+/* RECORD LIST */
+
+.pm-page-record-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* REPORT CARD */
+
+.pm-page-record-card {
+  overflow: hidden;
+  background: #FFFFFF;
+  border: 1px solid #D4DEEA;
+  border-radius: 11px;
+  box-shadow: 0 4px 13px rgba(23, 63, 97, 0.08);
+}
+
+/* DATE */
+
+.pm-page-record-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 18px 15px 20px;
+  text-align: center;
+  background: #17466B;
+  border-bottom: 4px solid #A77BCA;
+}
+
+.pm-page-record-date span {
+  color: #E9DDF3;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 1.3px;
+}
+
+.pm-page-record-date strong {
+  color: #FFFFFF;
+  font-size: 25px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+/* RECORD SUMMARY */
+
+.pm-page-record-summary {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #F4F7FB;
+  border-bottom: 1px solid #DCE3EC;
+}
+
+.pm-page-summary-item {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding: 15px 20px;
+}
+
+.pm-page-summary-item + .pm-page-summary-item {
+  border-left: 1px solid #DCE3EC;
+}
+
+.pm-page-summary-item span {
+  color: #52677F;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.pm-page-summary-item strong {
+  color: #173F61;
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.pm-page-summary-item .pm-page-result-good {
+  color: #176B48;
+}
+
+.pm-page-summary-item .pm-page-result-follow {
+  color: #A05224;
+}
+
+/* REPORT DETAILS */
+
+.pm-page-report-body {
+  padding: 7px 21px 17px;
+}
+
+.pm-page-record-group {
+  padding: 16px 0;
+  border-bottom: 1px solid #DCE3EC;
+}
+
+.pm-page-record-group:last-child {
+  border-bottom: none;
+  padding-bottom: 5px;
+}
+
+.pm-page-record-group h4 {
+  margin: 0 0 13px;
+  padding: 3px 0 3px 12px;
+  border-left: 5px solid #A77BCA;
+  color: #173F61;
+  font-size: 19px;
+  font-weight: 800;
+  letter-spacing: 0.1px;
+}
+
+.pm-page-record-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.pm-page-record-item {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 13px 15px;
+  background: #F3F6FA;
+  border: 1px solid #D7E0EA;
+  border-left: 4px solid #A77BCA;
+  border-radius: 8px;
+}
+
+.pm-page-record-item.full-width {
+  grid-column: 1 / -1;
+}
+
+.pm-page-record-item span {
+  color: #40566F;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.pm-page-record-item strong {
+  color: #172F49;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+/* EMPTY MESSAGE */
+
+.pm-page-empty-message {
+  padding: 30px 20px;
+  background: #FFFFFF;
+  border: 1px dashed #AAB9CA;
+  border-radius: 10px;
+  color: #40566F;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 750px) {
+  .pm-page-history-content {
+    width: 94%;
+    padding-top: 22px;
+    gap: 19px;
+  }
+
+  .pm-page-history-title h2 {
+    font-size: 24px;
+  }
+
+  .pm-page-equipment-info {
+    grid-template-columns: 1fr;
+    gap: 17px;
+    padding: 18px;
+  }
+
+  .pm-page-equipment-heading {
+    padding: 0 0 14px;
+    border-right: none;
+    border-bottom: 1px solid #DCE3EC;
+  }
+
+  .pm-page-history-section-header h3 {
+    font-size: 21px;
+  }
+
+  .pm-page-record-date strong {
+    font-size: 23px;
+  }
+}
+
+@media (max-width: 520px) {
+  .pm-page-history-title h2 {
+    font-size: 21px;
+  }
+
+  .pm-page-equipment-details {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .pm-page-history-section-header {
+    align-items: flex-start;
+  }
+
+  .pm-page-history-section-header h3 {
+    font-size: 19px;
+  }
+
+  .pm-page-history-section-header p {
+    font-size: 14px;
+  }
+
+  .pm-page-record-count {
+    padding: 7px 10px;
+    font-size: 12px;
+  }
+
+  .pm-page-record-date strong {
+    font-size: 22px;
+  }
+
+  .pm-page-summary-item {
+    padding: 12px;
+  }
+
+  .pm-page-report-body {
+    padding: 5px 13px 14px;
+  }
+
+  .pm-page-record-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pm-page-record-item.full-width {
+    grid-column: 1 / -1;
+  }
+
+  .pm-page-record-group h4 {
+    font-size: 17px;
+  }
+
+  .pm-page-record-item span {
+    font-size: 14px;
+  }
+
+  .pm-page-record-item strong {
+    font-size: 16px;
+  }
+}

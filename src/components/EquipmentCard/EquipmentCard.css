@@ -1,0 +1,172 @@
+.equipment-card {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+  border: 1.5px solid #D9C7E8;
+  border-radius: 12px;
+  padding: 14px;
+  box-shadow: 0 3px 9px rgba(167, 123, 202, 0.12);
+  transition: 0.2s;
+}
+
+.equipment-card:hover {
+  background-color: #FBF8FD;
+  border-color: #A77BCA;
+  box-shadow: 0 5px 12px rgba(167, 123, 202, 0.18);
+}
+
+.equipment-card:active {
+  background-color: #F7F0FB;
+}
+
+.equipment-card-info h3 {
+  color: #17466B;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #F1F6FA;
+  border: 1px solid #D9C7E8;
+  border-radius: 8px;
+  padding: 9px;
+  margin: 0 0 14px;
+  box-shadow: 0 2px 5px rgba(167, 123, 202, 0.10);
+}
+
+.equipment-card-info p {
+  color: #222222;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 10px 0;
+}
+
+.equipment-card-info strong {
+  font-weight: 700;
+}
+
+/* Transfer Information */
+.transferred-info {
+  background-color: #F8F1FC;
+  border: 1px solid #D9C7E8;
+  border-radius: 8px;
+  padding: 9px 11px;
+  margin-bottom: 12px;
+}
+
+.transferred-label {
+  display: inline-block;
+  background-color: #A77BCA;
+  color: white;
+  border-radius: 5px;
+  padding: 4px 9px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.equipment-card-info .transferred-info p {
+  color: #17466B;
+  font-size: 13px;
+  margin: 8px 0 0;
+}
+
+.equipment-card-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+  padding-top: 12px;
+  border-top: 1px solid #E8DDF0;
+}
+
+.equipment-card-actions button {
+  border: none;
+  border-radius: 6px;
+  padding: 9px 8px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.view-equipment-button {
+  width: 100%;
+  background-color: #17466B;
+  color: white;
+}
+
+.view-equipment-button:hover {
+  background-color: #103653;
+}
+
+.equipment-card-secondary-actions {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  width: 100%;
+}
+
+.equipment-card-secondary-actions button {
+  flex: 1;
+  min-width: 0;
+  white-space: nowrap;
+}
+
+.edit-equipment-button {
+  background-color: #17466B;
+  color: white;
+}
+
+.edit-equipment-button:hover {
+  background-color: #103653;
+}
+
+.delete-equipment-button {
+  background-color: #C0392B;
+  color: white;
+}
+
+.delete-equipment-button:hover {
+  background-color: #A93226;
+}
+
+.transfer-equipment-button {
+  background-color: #17466B;
+  color: white;
+}
+
+.transfer-equipment-button:hover {
+  background-color: #103653;
+}
+
+.favorite-button {
+  background-color: white;
+  color: #17466B;
+  border: 1px solid #D9C7E8;
+  border-radius: 6px;
+  font-size: 36px;
+  padding: 0;
+  line-height: 1;
+}
+
+.equipment-card-secondary-actions .favorite-button {
+  flex: 0 0 40px;
+  width: 40px;
+  min-width: 40px;
+  height: 38px;
+  padding: 0;
+  font-size: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.favorite-button:hover {
+  background-color: #F1F6FA;
+}
+
+.favorite-button.active {
+  background-color: white;
+  color: #A77BCA;
+  border-color: #A77BCA;
+}

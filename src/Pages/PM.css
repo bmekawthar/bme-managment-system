@@ -1,0 +1,151 @@
+.pm-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #F4F7FA;
+}
+
+.pm-content {
+  width: 90%;
+  max-width: 1200px;
+  margin: 30px auto;
+  flex: 1;
+}
+
+/* Back Button */
+.pm-back-button {
+  background-color: #17466B;
+  color: white;
+  border: none;
+  padding: 9px 18px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.pm-back-button:hover {
+  background-color: #123954;
+}
+
+/* Page Title */
+.pm-content > h2 {
+  color: #17466B;
+  text-align: center;
+  background-color: #FFFFFF;
+  border: 2px solid #A77BCA;
+  border-radius: 14px;
+  padding: 22px;
+  margin: 25px 0 30px;
+  font-size: 28px;
+  font-weight: bold;
+  box-shadow: 0 3px 10px rgba(23, 70, 107, 0.08);
+}
+
+/* Summary Cards */
+.pm-summary {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.pm-summary-card {
+  flex: 1;
+  background-color: #F8EDF7;
+  border: 1px solid #D8C4E6;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+}
+
+.pm-summary-card h3 {
+  color: #17466B;
+  margin-bottom: 10px;
+}
+
+.pm-summary-card p {
+  color: #A77BCA;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Calendar Section */
+.pm-calendar-section {
+  background-color: white;
+  border: 1px solid #D8C4E6;
+  border-radius: 12px;
+  padding: 35px 25px;
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 480px;
+}
+
+.pm-calendar-section h3 {
+  color: #17466B;
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+
+/* Calendar */
+.pm-calendar-section .rdp-root {
+  font-size: 18px;
+  --rdp-day-width: 55px;
+  --rdp-day-height: 55px;
+  --rdp-day_button-width: 48px;
+  --rdp-day_button-height: 48px;
+  --rdp-nav_button-width: 42px;
+  --rdp-nav_button-height: 42px;
+  --rdp-accent-color: #17466B;
+  --rdp-accent-background-color: #E8DDF0;
+  --rdp-today-color: #A77BCA;
+}
+
+.pm-calendar-section .rdp-month {
+  width: 100%;
+}
+
+.pm-calendar-section .rdp-month_grid {
+  width: 100%;
+}
+
+.pm-calendar-section .rdp-weekday {
+  font-size: 15px;
+  color: #17466B;
+  font-weight: bold;
+}
+
+.pm-calendar-section .rdp-day_button {
+  font-size: 16px;
+}
+
+/* Selected Date Maintenance Section */
+.pm-selected-date-section {
+  width: 100%;
+  margin-top: 25px;
+}
+
+/* Selected Date Heading */
+.pm-selected-date-section h4 {
+  display: block;
+  width: fit-content;
+  margin: 25px auto 20px;
+  padding: 12px 28px;
+  background-color: #EAF2F8;
+  border: 1px solid #C5D9E8;
+  border-left: 5px solid #17466B;
+  border-radius: 9px;
+  color: #17466B;
+  font-size: 17px;
+  font-weight: 700;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(23, 70, 107, 0.08);
+}
+
+/* Maintenance Table Spacing */
+.pm-selected-date-section .pm-list-section {
+  margin-bottom: 0;
+}

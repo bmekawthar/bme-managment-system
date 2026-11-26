@@ -1,0 +1,367 @@
+/* =========================================
+   Equipment Form - Akalil Hospital
+========================================= */
+
+.equipment-form {
+  background-color: #FFFFFF;
+  border: 1px solid #E4D8EF;
+  border-radius: 16px;
+  padding: 30px;
+  margin: 0 auto 35px;
+  max-width: 850px;
+
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px 25px;
+
+  box-shadow: 0 5px 18px rgba(23, 70, 107, 0.07);
+}
+
+/* Form Title */
+
+.equipment-form h3 {
+  grid-column: 1 / -1;
+  color: #17466B;
+  text-align: center;
+  font-size: 21px;
+  font-weight: 700;
+  margin: 0 0 12px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #EDE3F4;
+}
+
+/* Field Labels */
+
+.equipment-form label {
+  display: block;
+  color: #17466B;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 9px;
+  text-align: left;
+}
+
+/* Inputs and Selects */
+
+.equipment-form input,
+.equipment-form select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 13px;
+
+  border: 1px solid #D5DDE7;
+  border-radius: 9px;
+
+  background-color: #FAFBFD;
+  color: #17466B;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  transition: border-color 0.2s, box-shadow 0.2s,
+    background-color 0.2s;
+}
+
+.equipment-form input:hover,
+.equipment-form select:hover {
+  border-color: #A77BCA;
+}
+
+.equipment-form input:focus,
+.equipment-form select:focus {
+  outline: none;
+  border-color: #A77BCA;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 0 3px rgba(167, 123, 202, 0.14);
+}
+
+/* Equipment Code */
+
+.equipment-form .equipment-code-input {
+  border-color: #A77BCA;
+  background-color: #FBF8FD;
+  font-weight: 700;
+}
+
+/* Equipment Cost */
+
+.equipment-form input[type="number"] {
+  font-weight: 700;
+  color: #17466B;
+}
+
+/* Calendar */
+
+.equipment-calendar {
+  position: relative;
+  z-index: 5;
+  margin-top: 8px;
+}
+
+/* Form Buttons */
+
+.equipment-form-actions {
+  grid-column: 1 / -1;
+
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+
+  margin-top: 15px;
+  padding-top: 20px;
+  border-top: 1px solid #E8EAF0;
+}
+
+.equipment-form-actions button {
+  min-width: 125px;
+  border: none;
+  border-radius: 9px;
+  padding: 12px 25px;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.cancel-equipment-button {
+  background-color: #EEF1F5;
+  color: #17466B;
+}
+
+.cancel-equipment-button:hover {
+  background-color: #E0E5EC;
+}
+
+.save-equipment-button {
+  background-color: #17466B;
+  color: #FFFFFF;
+}
+
+.save-equipment-button:hover {
+  background-color: #A77BCA;
+  transform: translateY(-1px);
+}
+
+/* Tablet and Mobile */
+
+@media (max-width: 700px) {
+  .equipment-form {
+    grid-template-columns: 1fr;
+    padding: 22px 18px;
+    gap: 18px;
+  }
+
+  .equipment-form h3,
+  .equipment-form-actions {
+    grid-column: 1;
+  }
+
+  .equipment-form h3 {
+    font-size: 19px;
+  }
+
+  .equipment-form-actions {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .equipment-form-actions button {
+    flex: 1;
+    min-width: 0;
+  }
+}
+
+@media (max-width: 380px) {
+  .equipment-form-actions {
+    flex-direction: column;
+  }
+
+  .equipment-form-actions button {
+    width: 100%;
+  }
+}/* =========================================
+   Equipment Form - Akalil Hospital
+========================================= */
+
+.equipment-form {
+  background-color: #FFFFFF;
+  border: 1px solid #E4D8EF;
+  border-radius: 16px;
+  padding: 30px;
+  margin: 0 auto 35px;
+  max-width: 850px;
+
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px 25px;
+
+  box-shadow: 0 5px 18px rgba(23, 70, 107, 0.07);
+}
+
+/* Form Title */
+
+.equipment-form h3 {
+  grid-column: 1 / -1;
+  color: #17466B;
+  text-align: center;
+  font-size: 21px;
+  font-weight: 700;
+  margin: 0 0 12px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #EDE3F4;
+}
+
+/* Field Labels */
+
+.equipment-form label {
+  display: block;
+  color: #17466B;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 9px;
+  text-align: left;
+}
+
+/* Inputs and Selects */
+
+.equipment-form input,
+.equipment-form select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 13px;
+
+  border: 1px solid #D5DDE7;
+  border-radius: 9px;
+
+  background-color: #FAFBFD;
+  color: #17466B;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  transition: border-color 0.2s, box-shadow 0.2s,
+    background-color 0.2s;
+}
+
+.equipment-form input:hover,
+.equipment-form select:hover {
+  border-color: #A77BCA;
+}
+
+.equipment-form input:focus,
+.equipment-form select:focus {
+  outline: none;
+  border-color: #A77BCA;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 0 3px rgba(167, 123, 202, 0.14);
+}
+
+/* Equipment Code */
+
+.equipment-form .equipment-code-input {
+  border-color: #A77BCA;
+  background-color: #FBF8FD;
+  font-weight: 700;
+}
+
+/* Equipment Cost */
+
+.equipment-form input[type="number"] {
+  font-weight: 700;
+  color: #17466B;
+}
+
+/* Calendar */
+
+.equipment-calendar {
+  position: relative;
+  z-index: 5;
+  margin-top: 8px;
+}
+
+/* Form Buttons */
+
+.equipment-form-actions {
+  grid-column: 1 / -1;
+
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+
+  margin-top: 15px;
+  padding-top: 20px;
+  border-top: 1px solid #E8EAF0;
+}
+
+.equipment-form-actions button {
+  min-width: 125px;
+  border: none;
+  border-radius: 9px;
+  padding: 12px 25px;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.cancel-equipment-button {
+  background-color: #EEF1F5;
+  color: #17466B;
+}
+
+.cancel-equipment-button:hover {
+  background-color: #E0E5EC;
+}
+
+.save-equipment-button {
+  background-color: #17466B;
+  color: #FFFFFF;
+}
+
+.save-equipment-button:hover {
+  background-color: #A77BCA;
+  transform: translateY(-1px);
+}
+
+/* Tablet and Mobile */
+
+@media (max-width: 700px) {
+  .equipment-form {
+    grid-template-columns: 1fr;
+    padding: 22px 18px;
+    gap: 18px;
+  }
+
+  .equipment-form h3,
+  .equipment-form-actions {
+    grid-column: 1;
+  }
+
+  .equipment-form h3 {
+    font-size: 19px;
+  }
+
+  .equipment-form-actions {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .equipment-form-actions button {
+    flex: 1;
+    min-width: 0;
+  }
+}
+
+@media (max-width: 380px) {
+  .equipment-form-actions {
+    flex-direction: column;
+  }
+
+  .equipment-form-actions button {
+    width: 100%;
+  }
+}

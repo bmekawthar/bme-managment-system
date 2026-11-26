@@ -1,0 +1,152 @@
+.use-inventory-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 35, 55, 0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  z-index: 1000;
+  overflow-y: auto;
+}
+
+.use-inventory-form {
+  width: 100%;
+  max-width: 560px;
+  max-height: 90vh;
+  overflow-y: auto;
+  background: white;
+  border: 2px solid #A77BCA;
+  border-radius: 14px;
+  padding: 25px;
+  box-shadow: 0 5px 20px rgba(23, 70, 107, 0.18);
+}
+
+.use-inventory-header {
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.use-inventory-header h2 {
+  color: #17466B;
+  font-size: 23px;
+  margin-bottom: 7px;
+}
+
+.use-inventory-header p {
+  color: #17466B;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.use-inventory-field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 16px;
+  gap: 7px;
+}
+
+.use-inventory-field label {
+  width: 100%;
+  color: #17466B;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.use-inventory-field input,
+.use-inventory-field select,
+.use-inventory-field textarea {
+  width: 100%;
+  padding: 11px 12px;
+  border: 1px solid #CBD5E1;
+  border-radius: 8px;
+  outline: none;
+  color: #17466B;
+  background: white;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.use-inventory-field input:focus,
+.use-inventory-field select:focus,
+.use-inventory-field textarea:focus {
+  border-color: #A77BCA;
+}
+
+.use-inventory-field input[readonly] {
+  background: #F3F5F8;
+}
+
+.use-inventory-field select:disabled {
+  background: #F3F5F8;
+  cursor: not-allowed;
+}
+
+.use-inventory-field textarea {
+  resize: vertical;
+}
+
+.use-inventory-message {
+  color: #C0392B;
+  font-size: 13px;
+  text-align: center;
+}
+
+.use-inventory-actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.use-inventory-actions button {
+  width: 130px;
+  padding: 11px 15px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.use-inventory-cancel {
+  background: #F0E8F7;
+  color: #79519B;
+  border: 1px solid #D8C5E9;
+}
+
+.use-inventory-cancel:hover {
+  background: #E3D5EF;
+}
+
+.use-inventory-confirm {
+  background: #A77BCA;
+  color: white;
+  border: 1px solid #A77BCA;
+}
+
+.use-inventory-confirm:hover {
+  background: #9164B5;
+}
+
+.use-inventory-confirm:disabled {
+  background: #B9A5C9;
+  border-color: #B9A5C9;
+  cursor: not-allowed;
+}
+
+@media (max-width: 480px) {
+  .use-inventory-form {
+    padding: 18px;
+  }
+
+  .use-inventory-header h2 {
+    font-size: 20px;
+  }
+
+  .use-inventory-actions button {
+    width: 115px;
+  }
+}

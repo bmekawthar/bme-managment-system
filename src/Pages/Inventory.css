@@ -1,0 +1,324 @@
+.inventory-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #F5F7FB;
+}
+
+.inventory-container {
+  width: 92%;
+  max-width: 1250px;
+  margin: 40px auto;
+  flex: 1;
+}
+
+/* Back Button */
+
+.inventory-back-button {
+  display: block;
+  background: #17466B;
+  color: white;
+  border: 1px solid #17466B;
+  padding: 9px 18px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 18px;
+  transition: 0.3s;
+}
+
+.inventory-back-button:hover {
+  background: #A77BCA;
+  border-color: #A77BCA;
+  color: white;
+}
+
+/* Page Title */
+
+.inventory-title {
+  background: white;
+  padding: 22px;
+  border: 2px solid #A77BCA;
+  border-radius: 14px;
+  text-align: center;
+  margin-bottom: 30px;
+  box-shadow: 0 3px 10px rgba(23, 70, 107, 0.08);
+}
+
+.inventory-title h1 {
+  color: #17466B;
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.inventory-title p {
+  color: #17466B;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* Summary Cards */
+
+.inventory-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-bottom: 25px;
+}
+
+.inventory-card {
+  padding: 25px 15px;
+  border-radius: 14px;
+  text-align: center;
+  border: 1px solid #DCE3ED;
+  background: white;
+  box-shadow: 0 3px 10px rgba(23, 70, 107, 0.06);
+}
+
+.inventory-card h2 {
+  font-size: 30px;
+  margin-bottom: 8px;
+  color: #17466B;
+}
+
+.inventory-card p {
+  font-size: 15px;
+  font-weight: 600;
+  color: #17466B;
+}
+
+.total-card {
+  border-top: 4px solid #17466B;
+}
+
+.low-card {
+  border-top: 4px solid #E5A33B;
+}
+
+.out-card {
+  border-top: 4px solid #D9534F;
+}
+
+/* Add Item Button */
+
+.inventory-add-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.inventory-add-button {
+  background: #A77BCA;
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 9px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.inventory-add-button:hover {
+  background: #9164B5;
+}
+
+/* Inventory Section */
+
+.inventory-section {
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  border: 1px solid #DCE3ED;
+  box-shadow: 0 3px 10px rgba(23, 70, 107, 0.06);
+}
+
+.inventory-section-header {
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.inventory-section-header h2 {
+  color: #17466B;
+  font-size: 22px;
+  text-align: center;
+}
+
+/* Search */
+
+.inventory-search {
+  margin-bottom: 20px;
+}
+
+.inventory-search input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #CBD5E1;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  color: #17466B;
+}
+
+.inventory-search input:focus {
+  border-color: #A77BCA;
+}
+
+/* Inventory Table */
+
+.inventory-table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.inventory-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.inventory-table th {
+  background: #EDF2F8;
+  color: #17466B;
+  padding: 15px 12px;
+  font-size: 14px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.inventory-table td {
+  padding: 15px 12px;
+  border-bottom: 1px solid #E5EAF1;
+  color: #17466B;
+  font-size: 14px;
+}
+
+.inventory-table tbody tr:hover {
+  background: #FAF7FD;
+}
+
+/* Action Buttons */
+
+.inventory-action-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.inventory-action-buttons button {
+  width: 78px;
+  min-width: 78px;
+  height: 36px;
+  padding: 7px 8px;
+  border-radius: 7px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  white-space: nowrap;
+}
+
+/* Use Button */
+
+.inventory-use-button {
+  background: #E5F1EA;
+  color: #287344;
+  border: 1px solid #B8D8C3;
+}
+
+.inventory-use-button:hover {
+  background: #287344;
+  color: white;
+}
+
+.inventory-use-button:disabled {
+  background: #E5E7EB;
+  color: #777777;
+  border-color: #D1D5DB;
+  cursor: not-allowed;
+}
+
+/* Edit Button */
+
+.inventory-edit-button {
+  background: #F0E8F7;
+  color: #79519B;
+  border: 1px solid #D8C5E9;
+}
+
+.inventory-edit-button:hover {
+  background: #A77BCA;
+  color: white;
+}
+
+/* Delete Button */
+
+.inventory-delete-button {
+  background: #C0392B;
+  color: white;
+  border: 1px solid #C0392B;
+}
+
+.inventory-delete-button:hover {
+  background: #A93226;
+  border-color: #A93226;
+}
+
+/* Empty Table */
+
+.inventory-empty {
+  padding: 35px !important;
+  color: #17466B !important;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+  .inventory-container {
+    width: 95%;
+    margin: 25px auto;
+  }
+
+  .inventory-summary {
+    gap: 10px;
+  }
+
+  .inventory-card {
+    padding: 18px 8px;
+  }
+
+  .inventory-card h2 {
+    font-size: 24px;
+  }
+
+  .inventory-card p {
+    font-size: 12px;
+  }
+
+  .inventory-section {
+    padding: 15px;
+  }
+
+  .inventory-section-header h2 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .inventory-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .inventory-action-buttons {
+    gap: 6px;
+  }
+
+  .inventory-action-buttons button {
+    width: 70px;
+    min-width: 70px;
+  }
+}

@@ -1,0 +1,180 @@
+/* Scheduled Maintenance Section */
+.pm-list-section {
+  background-color: #FFFFFF;
+  border: 1px solid #D8C4E6;
+  border-radius: 14px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 8px rgba(23, 70, 107, 0.05);
+}
+
+/* Hide the separate section styling when placed under the calendar */
+.pm-selected-date-section .pm-list-section {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  margin-bottom: 0;
+  box-shadow: none;
+}
+
+.pm-list-section h3 {
+  color: #17466B;
+  text-align: center;
+  font-size: 21px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 22px;
+}
+
+/* Hide the duplicate title inside the calendar section */
+.pm-selected-date-section .pm-list-section h3 {
+  display: none;
+}
+
+.pm-table-container {
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid #E8DDF0;
+  border-radius: 10px;
+}
+
+.pm-schedule-table {
+  width: 100%;
+  min-width: 0;
+  table-layout: auto;
+}
+/* Table Header */
+.pm-schedule-table th {
+  background-color: #F8EDF7;
+  color: #17466B;
+  padding: 15px 12px;
+  font-size: 14px;
+  font-weight: bold;
+  border: 1px solid #D8C4E6;
+  white-space: nowrap;
+}
+
+/* Table Cells */
+.pm-schedule-table td {
+  padding: 14px 12px;
+  color: #17466B;
+  font-size: 14px;
+  border: 1px solid #E8DDF0;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+
+
+.pm-schedule-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Equipment Information */
+.pm-schedule-table td strong {
+  color: #17466B;
+  font-weight: bold;
+}
+
+.pm-equipment-code {
+  display: block;
+  color: #42566B;
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 6px;
+}
+
+/* Serial Number */
+.pm-serial-number-cell {
+  color: #17466B !important;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Next PM Date */
+.pm-next-date-cell {
+  font-weight: bold;
+  color: #17466B;
+}
+
+/* Maintenance Status */
+.pm-status {
+  display: inline-block;
+  padding: 7px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.pm-status.upcoming {
+  background-color: #E8F1FA;
+  color: #17466B;
+}
+
+.pm-status.due {
+  background-color: #FFF1D6;
+  color: #9A6500;
+}
+
+.pm-status.overdue {
+  background-color: #FCE8E8;
+  color: #B42318;
+}
+
+/* Action Buttons */
+.pm-action-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 125px;
+}
+
+.pm-complete-button,
+.pm-completed-button,
+.pm-view-button {
+  width: 100%;
+  border: none;
+  border-radius: 7px;
+  padding: 10px 12px;
+  font-size: 13px;
+  font-weight: bold;
+  white-space: nowrap;
+  transition: background-color 0.2s ease;
+}
+
+.pm-complete-button {
+  background-color: #17466B;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.pm-complete-button:hover {
+  background-color: #123954;
+}
+
+.pm-completed-button {
+  background-color: #E5F5EA;
+  color: #218044;
+  cursor: default;
+}
+
+.pm-view-button {
+  background-color: #F1E8F7;
+  color: #754A96;
+  cursor: pointer;
+}
+
+.pm-view-button:hover {
+  background-color: #E7D9F1;
+}
+
+/* Empty Message */
+.pm-empty-message {
+  color: #718096;
+  text-align: center;
+  font-size: 15px;
+  padding: 20px 10px;
+  margin: 0;
+}

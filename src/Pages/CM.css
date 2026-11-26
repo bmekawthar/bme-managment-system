@@ -1,0 +1,211 @@
+.cm-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #F4F7FA;
+}
+
+.cm-content {
+  width: 90%;
+  max-width: 1200px;
+  margin: 30px auto;
+  flex: 1;
+}
+
+/* Back Button */
+
+.cm-back-button {
+  background-color: #17466B;
+  color: #FFFFFF;
+  border: 1px solid #17466B;
+  border-radius: 7px;
+  padding: 9px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.cm-back-button:hover {
+  background-color: #123954;
+}
+
+/* Page Header */
+
+.cm-page-header {
+  text-align: center;
+  background-color: #FFFFFF;
+  border: 1px solid #E8DDF0;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 25px 0;
+  box-shadow: 0 3px 10px rgba(23, 70, 107, 0.06);
+}
+
+.cm-page-header h1 {
+  color: #17466B;
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+
+.cm-page-header p {
+  color: #17466B;
+  font-size: 15px;
+  margin: 0;
+}
+
+/* Summary Cards */
+
+.cm-summary {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.cm-summary-card {
+  flex: 1;
+  background-color: #F8EDF7;
+  border: 1px solid #D8C4E6;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+}
+
+.cm-summary-card h3 {
+  color: #17466B;
+  font-size: 17px;
+  font-weight: 700;
+  margin: 0 0 12px;
+}
+
+.cm-summary-card p {
+  color: #A77BCA;
+  font-size: 25px;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* Main Action Buttons */
+
+.cm-main-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 25px 0 30px;
+}
+
+.cm-primary-button,
+.cm-secondary-button,
+.cm-cancel-button {
+  padding: 10px 20px;
+  border-radius: 7px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.cm-primary-button {
+  background-color: #A77BCA;
+  color: #FFFFFF;
+  border: 1px solid #A77BCA;
+}
+
+.cm-primary-button:hover {
+  background-color: #9163B5;
+  border-color: #9163B5;
+}
+
+.cm-secondary-button {
+  background-color: #A77BCA;
+  color: #FFFFFF;
+  border: 1px solid #A77BCA;
+}
+
+.cm-secondary-button:hover {
+  background-color: #a274c5;
+  border-color: #a071c5;
+}
+
+.cm-cancel-button {
+  background-color: #FFFFFF;
+  color: #17466B;
+  border: 1px solid #D5DCE5;
+}
+
+.cm-cancel-button:hover {
+  background-color: #F4F7FA;
+}
+
+.cm-action-button {
+  min-width: 230px;
+  min-height: 76px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 13px;
+  padding: 13px 20px;
+  border-radius: 10px;
+  text-align: left;
+  box-shadow: 0 2px 7px rgba(23, 70, 107, 0.10);
+}
+
+.cm-action-button:hover {
+  transform: translateY(-2px);
+}
+
+.cm-action-text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.cm-action-text strong {
+  font-size: 15px;
+}
+
+.cm-action-text small {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.cm-primary-button.cm-action-button small {
+  color: #FFFFFF;
+}
+
+.cm-secondary-button.cm-action-button small {
+  color: #17466B;
+}
+
+.cm-action-icon {
+  font-size: 27px;
+  font-weight: 700;
+}
+
+/* Responsive Design */
+
+@media (max-width: 700px) {
+  .cm-content {
+    width: 94%;
+    margin: 20px auto;
+  }
+
+  .cm-page-header h1 {
+    font-size: 23px;
+  }
+
+  .cm-summary {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .cm-main-actions {
+    flex-direction: column;
+  }
+
+  .cm-action-button {
+    width: 100%;
+    max-width: 300px;
+  }
+}

@@ -1,0 +1,23 @@
+.favorites-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #F7F9FC;
+  font-family: Arial, sans-serif;
+}
+
+.favorites-content {
+  flex: 1;
+  padding: 30px;
+}
+
+.favorites-content h2 {
+  color: #333333;
+  margin-bottom: 25px;
+}
+
+.favorites-content > p {
+  color: #666666;
+  text-align: center;
+  margin-top: 40px;
+}

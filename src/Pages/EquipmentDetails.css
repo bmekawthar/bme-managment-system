@@ -1,0 +1,226 @@
+.equipment-details-page {
+  min-height: 100vh;
+  background: #F4F6FA;
+  padding: 25px 4%;
+  color: #17466B;
+}
+
+.equipment-details-back-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #17466B;
+  color: #FFFFFF;
+  border: none;
+  padding: 9px 17px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-bottom: 18px;
+  transition: 0.25s ease;
+}
+
+.equipment-details-back-button:hover {
+  background: #A77BCA;
+}
+
+.equipment-details-title {
+  background: #FFFFFF;
+  color: #17466B;
+  text-align: center;
+  font-size: 23px;
+  font-weight: 800;
+  padding: 18px;
+  border: 1px solid #E5D9EF;
+  border-top: 4px solid #A77BCA;
+  border-radius: 12px;
+  margin: 0 auto 22px;
+  box-shadow: 0 3px 12px rgba(23, 70, 107, 0.05);
+}
+
+.equipment-accordion {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.equipment-accordion-item {
+  background: #FFFFFF;
+  border: 1px solid #E0E6EF;
+  border-radius: 11px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(23, 70, 107, 0.04);
+  transition: 0.25s ease;
+}
+
+.equipment-accordion-item:hover {
+  border-color: #C7A5DE;
+}
+
+.equipment-accordion-header {
+  width: 100%;
+  min-height: 53px;
+  padding: 12px 17px;
+  background: #FFFFFF;
+  color: #17466B;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: background 0.25s ease;
+}
+
+.equipment-accordion-header:hover {
+  background: #F8F4FB;
+}
+
+.accordion-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 27px;
+  height: 27px;
+  background: #F2EAF8;
+  color: #79519B;
+  border-radius: 7px;
+  font-size: 19px;
+  font-weight: 800;
+  line-height: 1;
+  margin-left: 12px;
+}
+
+.equipment-accordion-content {
+  padding: 16px;
+  background: #FAFBFD;
+  color: #17466B;
+  text-align: center;
+  border-top: 1px solid #E9EAF0;
+}
+
+.equipment-accordion-content > p {
+  color: #17466B;
+  font-size: 13px;
+  font-weight: 600;
+  margin: 8px 0;
+  text-align: center;
+}
+
+.equipment-history-container {
+  width: 100%;
+  text-align: center;
+}
+
+.equipment-history-container h3 {
+  color: #17466B;
+  font-size: 16px;
+  font-weight: 800;
+  margin: 0 0 15px;
+}
+
+.equipment-history-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  text-align: center;
+  overflow: hidden;
+  border: 1px solid #E1E7EF;
+  border-radius: 9px;
+}
+
+.equipment-history-table th {
+  background: #17466B;
+  color: #FFFFFF;
+  padding: 11px 9px;
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.equipment-history-table td {
+  padding: 10px 9px;
+  border-bottom: 1px solid #E8ECF2;
+  color: #17466B;
+  font-size: 12px;
+  font-weight: 500;
+  background: #FFFFFF;
+}
+
+.equipment-history-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.equipment-history-table tbody tr:nth-child(even) td {
+  background: #F8F9FC;
+}
+
+.equipment-history-table tbody tr:hover td {
+  background: #F7F1FB;
+}
+
+.equipment-history-table th:first-child {
+  border-radius: 8px 0 0 0;
+}
+
+.equipment-history-table th:last-child {
+  border-radius: 0 8px 0 0;
+}
+
+@media (max-width: 768px) {
+  .equipment-details-page {
+    padding: 20px 3%;
+  }
+
+  .equipment-details-title {
+    font-size: 20px;
+    padding: 15px;
+  }
+
+  .equipment-accordion-content {
+    padding: 13px 10px;
+  }
+
+  .equipment-history-container {
+    overflow-x: auto;
+  }
+
+  .equipment-history-table {
+    min-width: 850px;
+  }
+}
+
+@media (max-width: 480px) {
+  .equipment-details-page {
+    padding: 16px 3%;
+  }
+
+  .equipment-details-title {
+    font-size: 19px;
+    padding: 14px 10px;
+    margin-bottom: 17px;
+  }
+
+  .equipment-accordion {
+    gap: 10px;
+  }
+
+  .equipment-accordion-header {
+    font-size: 13px;
+    padding: 11px 13px;
+  }
+
+  .equipment-accordion-content {
+    padding: 11px 8px;
+  }
+
+  .equipment-history-container h3 {
+    font-size: 15px;
+  }
+}

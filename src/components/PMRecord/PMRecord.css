@@ -1,0 +1,195 @@
+/* PM Record Main Card */
+.pm-record-section {
+  width: 92%;
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 28px;
+  background-color: #FFFFFF;
+  border: 1px solid #D8C4E6;
+  border-radius: 14px;
+  box-shadow: 0 3px 10px rgba(23, 70, 107, 0.06);
+  box-sizing: border-box;
+}
+
+/* Main Heading */
+.pm-record-section h3 {
+  color: #17466B;
+  text-align: center;
+  font-size: 21px;
+  font-weight: bold;
+  margin: 0 0 25px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #E8DDF0;
+}
+
+/* Equipment Information Card */
+.pm-record-equipment {
+  background-color: #F8EDF7;
+  border: 1px solid #D8C4E6;
+  border-radius: 11px;
+  padding: 18px;
+  margin-bottom: 25px;
+}
+
+/* Equipment Details Grid */
+.pm-record-equipment-details {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+/* Individual Equipment Detail */
+.pm-record-equipment-details div {
+  background-color: #FFFFFF;
+  border: 1px solid #E8DDF0;
+  border-radius: 8px;
+  padding: 13px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  min-width: 0;
+}
+
+.pm-record-equipment-details span {
+  color: #754A96;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.pm-record-equipment-details strong {
+  color: #17466B;
+  font-size: 14px;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+/* PM Record Form */
+.pm-record-section form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 20px;
+  row-gap: 10px;
+  align-items: start;
+}
+
+/* Form Labels */
+.pm-record-section label {
+  color: #17466B;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 7px;
+}
+
+/* Form Fields */
+.pm-record-section input,
+.pm-record-section select,
+.pm-record-section textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  border: 1px solid #D8C4E6;
+  border-radius: 7px;
+  background-color: #FFFFFF;
+  color: #17466B;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.pm-record-section input,
+.pm-record-section select {
+  min-height: 43px;
+}
+
+.pm-record-section textarea {
+  min-height: 95px;
+  resize: vertical;
+}
+
+.pm-record-section input:focus,
+.pm-record-section select:focus,
+.pm-record-section textarea:focus {
+  outline: none;
+  border-color: #A77BCA;
+  box-shadow: 0 0 0 2px rgba(167, 123, 202, 0.12);
+}
+
+/* Full Width Fields */
+.pm-record-section textarea,
+.pm-record-section label:has(+ textarea) {
+  grid-column: 1 / -1;
+}
+
+/* Action Buttons */
+.pm-record-buttons {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.pm-record-buttons button {
+  width: 100%;
+  max-width: 230px;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 7px;
+  background-color: #17466B;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.pm-record-buttons button:hover {
+  background-color: #123954;
+}
+
+.pm-record-buttons .pm-record-cancel {
+  background-color: #F1E8F7;
+  color: #754A96;
+}
+
+.pm-record-buttons .pm-record-cancel:hover {
+  background-color: #E7D9F1;
+}
+
+/* Responsive Design */
+@media (max-width: 650px) {
+  .pm-record-section {
+    width: 96%;
+    padding: 18px;
+    margin: 22px auto;
+  }
+
+  .pm-record-section h3 {
+    font-size: 19px;
+  }
+
+  .pm-record-equipment-details {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .pm-record-section form {
+    grid-template-columns: 1fr;
+    gap: 9px;
+  }
+
+  .pm-record-section textarea,
+  .pm-record-section label:has(+ textarea) {
+    grid-column: 1;
+  }
+
+  .pm-record-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .pm-record-buttons button {
+    max-width: 100%;
+  }
+}

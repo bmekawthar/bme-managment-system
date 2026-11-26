@@ -1,0 +1,345 @@
+/* =========================================
+   Statistics Page - Akalil Hospital
+========================================= */
+
+.statistics-page {
+  min-height: 100vh;
+  padding: 25px 3%;
+  background-color: #F4F6FA;
+  color: #17466B;
+}
+
+.statistics-container {
+  width: 100%;
+  max-width: 1450px;
+  margin: 0 auto;
+}
+
+/* Back Button */
+
+.statistics-back-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #17466B;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 8px;
+  padding: 9px 18px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-bottom: 18px;
+  transition: 0.2s ease;
+}
+
+.statistics-back-button:hover {
+  background-color: #A77BCA;
+  transform: translateY(-1px);
+}
+
+/* Page Title */
+
+.statistics-container h1 {
+  width: 100%;
+  box-sizing: border-box;
+  color: #17466B;
+  background-color: #FFFFFF;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 800;
+  margin: 0 0 12px;
+  padding: 17px 20px;
+  border: 1px solid #E5D9EF;
+  border-top: 4px solid #A77BCA;
+  border-radius: 11px;
+  box-shadow: 0 3px 12px rgba(23, 70, 107, 0.05);
+}
+
+/* Description */
+
+.statistics-description {
+  color: #17466B;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 0 22px;
+}
+
+/* Category Filter */
+
+.statistics-filter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+  border: 1px solid #E2D8EB;
+  border-radius: 11px;
+  padding: 15px 20px;
+  margin-bottom: 22px;
+  box-shadow: 0 3px 10px rgba(23, 70, 107, 0.04);
+}
+
+.statistics-filter label {
+  color: #17466B;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.statistics-filter select {
+  min-width: 210px;
+  padding: 11px 14px;
+  border: 1px solid #D5DDE7;
+  border-radius: 8px;
+  background-color: #FAFBFD;
+  color: #17466B;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.statistics-filter select:hover {
+  border-color: #A77BCA;
+}
+
+.statistics-filter select:focus {
+  outline: none;
+  border-color: #A77BCA;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 0 3px rgba(167, 123, 202, 0.14);
+}
+
+/* Statistics Cards */
+
+.statistics-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  width: 100%;
+  margin-bottom: 28px;
+}
+
+.statistics-card {
+  min-width: 0;
+  min-height: 145px;
+  box-sizing: border-box;
+  border-radius: 13px;
+  padding: 25px 18px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  box-shadow: 0 3px 12px rgba(23, 70, 107, 0.06);
+  transition: 0.2s ease;
+}
+
+.statistics-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(23, 70, 107, 0.10);
+}
+
+/* Total Equipment */
+
+.total-equipment-card {
+  background-color: #EEF3F9;
+  border: 1px solid #C8D7E8;
+  border-top: 4px solid #17466B;
+}
+
+/* Working Equipment */
+
+.working-equipment-card {
+  background-color: #F0F6F2;
+  border: 1px solid #C9DFD0;
+  border-top: 4px solid #56876A;
+}
+
+/* Out of Service */
+
+.out-of-service-card {
+  background-color: #F8F1F7;
+  border: 1px solid #E5D2E4;
+  border-top: 4px solid #A77BCA;
+}
+
+.statistics-card h3 {
+  color: #17466B;
+  font-size: 17px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.statistics-card p {
+  color: #17466B;
+  font-size: 34px;
+  font-weight: 800;
+  margin: 0;
+}
+
+/* Department Statistics */
+
+.department-statistics {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+  border: 1px solid #E2D8EB;
+  border-radius: 12px;
+  padding: 22px;
+  box-shadow: 0 3px 10px rgba(23, 70, 107, 0.05);
+}
+
+.department-statistics h2 {
+  color: #17466B;
+  font-size: 19px;
+  font-weight: 800;
+  text-align: center;
+  margin: 0 0 18px;
+  padding-bottom: 13px;
+  border-bottom: 2px solid #EDE3F4;
+}
+
+.department-statistics > p {
+  color: #17466B;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  padding: 18px;
+  margin: 0;
+}
+
+/* Statistics Table */
+
+.statistics-table-container {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid #E1E7EF;
+  border-radius: 9px;
+}
+
+.statistics-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background-color: #FFFFFF;
+  text-align: center;
+}
+
+.statistics-table th {
+  background-color: #17466B;
+  color: #FFFFFF;
+  padding: 15px 12px;
+  font-size: 13px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.statistics-table td {
+  padding: 14px 12px;
+  border-bottom: 1px solid #E8ECF2;
+  color: #17466B;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.statistics-table tbody tr:nth-child(even) {
+  background-color: #F7F9FC;
+}
+
+.statistics-table tbody tr:hover {
+  background-color: #F7F1FB;
+}
+
+.statistics-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.statistics-table th:first-child {
+  border-radius: 8px 0 0 0;
+}
+
+.statistics-table th:last-child {
+  border-radius: 0 8px 0 0;
+}
+
+/* Responsive */
+
+@media (max-width: 800px) {
+  .statistics-cards {
+    gap: 13px;
+  }
+
+  .statistics-card {
+    min-height: 125px;
+    padding: 19px 12px;
+  }
+
+  .statistics-card h3 {
+    font-size: 14px;
+  }
+
+  .statistics-card p {
+    font-size: 29px;
+  }
+}
+
+@media (max-width: 700px) {
+  .statistics-page {
+    padding: 20px 3%;
+  }
+
+  .statistics-container h1 {
+    font-size: 21px;
+    padding: 15px;
+  }
+
+  .statistics-description {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  .statistics-filter {
+    flex-direction: column;
+    gap: 10px;
+    padding: 14px;
+  }
+
+  .statistics-filter select {
+    width: 100%;
+  }
+
+  .statistics-cards {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .statistics-card {
+    min-height: 115px;
+    padding: 17px;
+  }
+
+  .statistics-card h3 {
+    font-size: 15px;
+  }
+
+  .statistics-card p {
+    font-size: 28px;
+  }
+
+  .department-statistics {
+    padding: 14px;
+  }
+
+  .department-statistics h2 {
+    font-size: 17px;
+  }
+
+  .statistics-table {
+    min-width: 600px;
+  }
+}

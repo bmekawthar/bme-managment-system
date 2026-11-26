@@ -1,0 +1,33 @@
+.favorite-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FCEFF5;
+  border: 1px solid #A77BCA;
+  border-radius: 10px;
+  padding: 18px 22px;
+  margin-bottom: 15px;
+}
+
+.favorite-item h3 {
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.favorite-item p {
+  color: #555555;
+  margin: 6px 0;
+}
+
+.favorite-item button {
+  background-color: #A77BCA;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  padding: 9px 16px;
+  cursor: pointer;
+}
+
+.favorite-item button:hover {
+  background-color: #9165B5;
+}

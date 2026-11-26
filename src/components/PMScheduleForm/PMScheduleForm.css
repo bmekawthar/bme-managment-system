@@ -1,0 +1,202 @@
+/* Schedule Form Section */
+.pm-schedule-form-section {
+  background-color: #FFFFFF;
+  border: 1px solid #D8C4E6;
+  border-radius: 14px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 8px rgba(23, 70, 107, 0.05);
+}
+
+/* Form Header */
+.pm-schedule-form-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.pm-schedule-form-section h3 {
+  color: #17466B;
+  margin: 0;
+  font-size: 21px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Header Action Buttons */
+.pm-schedule-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+/* View All Schedules Button */
+.pm-view-all-button {
+  background-color: #F1E8F7;
+  color: #754A96;
+  border: 1px solid #D8C4E6;
+  padding: 9px 14px;
+  border-radius: 7px;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.pm-view-all-button:hover {
+  background-color: #E7D9F1;
+}
+
+/* Toggle Button */
+.pm-schedule-toggle-button {
+  background-color: #17466B;
+  color: #FFFFFF;
+  border: none;
+  width: 38px;
+  height: 38px;
+  border-radius: 7px;
+  font-size: 25px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.pm-schedule-toggle-button:hover {
+  background-color: #123954;
+}
+
+/* Form Layout */
+.pm-schedule-form-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+/* Labels */
+.pm-schedule-form-section label {
+  color: #17466B;
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Input Fields */
+.pm-schedule-form-section input,
+.pm-schedule-form-section select,
+.pm-schedule-form-section textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #D8C4E6;
+  border-radius: 7px;
+  font-size: 14px;
+  color: #17466B;
+  background-color: #FFFFFF;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+.pm-schedule-form-section input:focus,
+.pm-schedule-form-section select:focus,
+.pm-schedule-form-section textarea:focus {
+  outline: none;
+  border-color: #A77BCA;
+  box-shadow: 0 0 0 2px rgba(167, 123, 202, 0.12);
+}
+
+/* Equipment Search */
+.pm-schedule-form-section input::placeholder {
+  color: #718096;
+  opacity: 1;
+}
+
+/* Selected Equipment Information */
+.pm-equipment-info {
+  background-color: #F8EDF7;
+  border: 1px solid #D8C4E6;
+  border-radius: 9px;
+  padding: 14px 16px;
+  margin: 5px 0;
+}
+
+.pm-equipment-info p {
+  color: #17466B;
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+.pm-equipment-info p:last-child {
+  margin-bottom: 0;
+}
+
+.pm-equipment-info strong {
+  color: #17466B;
+}
+
+/* No Search Results */
+.pm-schedule-form-section form > p {
+  color: #B42318;
+  font-size: 13px;
+  text-align: center;
+  margin: 0;
+}
+
+/* Save Schedule Button */
+.pm-schedule-form-section form button {
+  background-color: #17466B;
+  color: #FFFFFF;
+  border: none;
+  padding: 12px;
+  border-radius: 7px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.2s ease;
+}
+
+.pm-schedule-form-section form button:hover {
+  background-color: #123954;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .pm-schedule-form-section {
+    padding: 18px;
+  }
+
+  .pm-schedule-form-header {
+    align-items: flex-start;
+  }
+
+  .pm-schedule-form-section h3 {
+    font-size: 17px;
+    text-align: left;
+  }
+
+  .pm-schedule-header-actions {
+    gap: 6px;
+  }
+
+  .pm-view-all-button {
+    padding: 8px 10px;
+    font-size: 11px;
+  }
+
+  .pm-schedule-toggle-button {
+    width: 34px;
+    height: 34px;
+  }
+
+  .pm-schedule-form-section form {
+    gap: 10px;
+  }
+
+  .pm-equipment-info {
+    padding: 12px;
+  }
+}

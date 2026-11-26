@@ -1,0 +1,192 @@
+.cm-repair-form {
+  width: 100%;
+  max-width: 1200px;
+  margin: 22px auto 30px;
+  padding: 25px;
+  background-color: #FFFFFF;
+  border: 1px solid #D8C4E6;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(23, 70, 107, 0.06);
+  box-sizing: border-box;
+
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.cm-report-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: center;
+  min-width: 0;
+}
+
+.cm-report-full-section {
+  grid-column: 1 / -1;
+}
+
+.cm-report-section label {
+  color: #17466B;
+  font-weight: 600;
+}
+
+.cm-report-section input,
+.cm-report-section select,
+.cm-report-section textarea {
+  width: 100%;
+  padding: 11px 12px;
+  border: 1px solid #C9D5E0;
+  border-radius: 7px;
+  font-size: 14px;
+  color: #17466B;
+  background-color: #FFFFFF;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.cm-report-section input:focus,
+.cm-report-section select:focus,
+.cm-report-section textarea:focus {
+  outline: none;
+  border-color: #A77BCA;
+  box-shadow: 0 0 0 2px rgba(167, 123, 202, 0.15);
+}
+
+.cm-report-section textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+
+.cm-report-spare-part {
+  display: grid;
+  grid-template-columns: 1.4fr 1.2fr 0.7fr 0.9fr auto;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.cm-report-spare-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+  text-align: center;
+}
+
+.cm-report-spare-field label {
+  color: #17466B;
+  font-weight: 600;
+}
+
+.cm-report-spare-field input {
+  width: 100%;
+  min-width: 0;
+  padding: 11px 12px;
+  border: 1px solid #C9D5E0;
+  border-radius: 7px;
+  font-size: 14px;
+  color: #17466B;
+  background-color: #FFFFFF;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.cm-report-spare-field input:focus {
+  outline: none;
+  border-color: #A77BCA;
+  box-shadow: 0 0 0 2px rgba(167, 123, 202, 0.15);
+}
+
+.cm-report-remove-part,
+.cm-report-add-part {
+  padding: 10px 15px;
+  border: 1px solid #A77BCA;
+  border-radius: 7px;
+  background-color: #F5EFFA;
+  color: #17466B;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.cm-report-remove-part:hover,
+.cm-report-add-part:hover {
+  background-color: #A77BCA;
+  color: #FFFFFF;
+}
+
+/* Smaller Add Spare Part button */
+.cm-report-add-part {
+  display: block;
+  width: fit-content;
+  margin: 10px auto 0;
+  padding: 7px 13px;
+  font-size: 12px;
+}
+
+/* Save and Cancel buttons under each other */
+.cm-report-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.cm-report-actions button {
+  width: 180px;
+  min-width: 180px;
+  padding: 11px 20px;
+  border: 1px solid #17466B;
+  border-radius: 8px;
+  background-color: #17466B;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.cm-report-actions button:hover {
+  background-color: #A77BCA;
+  border-color: #A77BCA;
+}
+
+@media (max-width: 850px) {
+  .cm-report-spare-part {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .cm-report-remove-part {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 700px) {
+  .cm-repair-form {
+    padding: 18px;
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .cm-report-full-section {
+    grid-column: auto;
+  }
+
+  .cm-report-spare-part {
+    grid-template-columns: 1fr;
+  }
+
+  .cm-report-remove-part {
+    grid-column: auto;
+  }
+
+  .cm-report-actions {
+    flex-direction: column;
+  }
+
+  .cm-report-actions button {
+    width: 180px;
+  }
+}

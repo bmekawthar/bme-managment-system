@@ -1,0 +1,127 @@
+.transfer-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+.transfer-modal {
+  width: 100%;
+  max-width: 500px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-sizing: border-box;
+  background-color: white;
+  border: 1px solid #D9C7E8;
+  border-radius: 13px;
+  padding: 27px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.18);
+}
+
+.transfer-modal h3 {
+  color: #17466B;
+  text-align: center;
+  font-size: 22px;
+  margin: 0 0 25px;
+}
+
+.transfer-modal p {
+  color: #444;
+  font-size: 15px;
+  margin: 12px 0;
+}
+
+.transfer-modal p strong {
+  color: #17466B;
+}
+
+.transfer-modal label {
+  display: block;
+  color: #333;
+  font-weight: bold;
+  margin: 20px 0 7px;
+}
+
+.transfer-modal select,
+.transfer-modal input,
+.transfer-modal textarea {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 11px;
+  border: 1px solid #CCC;
+  border-radius: 7px;
+  background-color: white;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.transfer-modal textarea {
+  min-height: 95px;
+  resize: vertical;
+}
+
+.transfer-modal select:focus,
+.transfer-modal input:focus,
+.transfer-modal textarea:focus {
+  outline: none;
+  border-color: #A77BCA;
+  box-shadow: 0 0 0 2px rgba(167, 123, 202, 0.13);
+}
+
+.transfer-modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.transfer-modal-actions button {
+  border: none;
+  border-radius: 7px;
+  padding: 11px 18px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.cancel-transfer-button {
+  background-color: #E9ECEF;
+  color: #333;
+}
+
+.cancel-transfer-button:hover {
+  background-color: #DDE1E5;
+}
+
+.confirm-transfer-button {
+  background-color: #A77BCA;
+  color: white;
+}
+
+.confirm-transfer-button:hover {
+  background-color: #9164B5;
+}
+
+@media (max-width: 700px) {
+  .transfer-modal {
+    padding: 20px;
+  }
+
+  .transfer-modal-actions {
+    flex-direction: column-reverse;
+  }
+
+  .transfer-modal-actions button {
+    width: 100%;
+  }
+}
